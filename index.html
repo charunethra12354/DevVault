@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevVault | Developer Knowledge Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><header class="header">
+    <h1>💎 DevVault</h1>
+    <p>Your personal developer knowledge hub</p>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+</header>
+
+<nav class="navbar">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#notes">Coding Notes</a>
+    <a href="#resources">Resources</a>
+    <a href="#snippets">Code Snippets</a>
+    <a href="#bugs">Bug Journal</a>
+</nav>
+
+<main class="container" id="dashboard">
+
+    <section class="welcome">
+        <h2>Welcome to DevVault! 🚀</h2>
+        <p>Organize your coding knowledge, save useful resources,
+        and keep track of your debugging journey.</p>
+    </section>
+
+    <section class="stats">
+        <div class="card">
+            <h3 id="noteCount">0</h3>
+            <p>Coding Notes</p>
+        </div>
+        <div class="card">
+            <h3 id="resourceCount">0</h3>
+            <p>Resources</p>
+        </div>
+        <div class="card">
+            <h3 id="snippetCount">0</h3>
+            <p>Code Snippets</p>
+        </div>
+        <div class="card">
+            <h3 id="bugCount">0</h3>
+            <p>Bug Solutions</p>
+        </div>
+    </section>
+
+    <section class="panel" id="notes">
+        <h2>📝 Coding Notes</h2>
+        <form id="noteForm">
+            <input id="noteTitle" type="text"
+                placeholder="Note title" required>
+            <textarea id="noteContent"
+                placeholder="Write your coding notes..."
+                required></textarea>
+            <button type="submit">Save Note</button>
+        </form>
+        <div id="notesList" class="items"></div>
+    </section>
+
+    <section class="panel" id="resources">
+        <h2>🔗 Resource Library</h2>
+        <form id="resourceForm">
+            <input id="resourceTitle" type="text"
+                placeholder="Resource name" required>
+            <input id="resourceUrl" type="url"
+                placeholder="https://example.com" required>
+            <button type="submit">Save Resource</button>
+        </form>
+        <div id="resourcesList" class="items"></div>
+    </section>
+
+    <section class="panel" id="snippets">
+        <h2>⌨️ Code Snippets</h2>
+        <form id="snippetForm">
+            <input id="snippetTitle" type="text"
+                placeholder="Snippet title" required>
+            <textarea id="snippetContent"
+                placeholder="Paste your code here..."
+                required></textarea>
+            <button type="submit">Save Snippet</button>
+        </form>
+        <div id="snippetsList" class="items"></div>
+    </section>
+
+    <section class="panel" id="bugs">
+        <h2>🐛 Bug Journal</h2>
+        <form id="bugForm">
+            <input id="bugTitle" type="text"
+                placeholder="Error or bug title" required>
+            <textarea id="bugSolution"
+                placeholder="Describe the solution..."
+                required></textarea>
+            <button type="submit">Save Solution</button>
+        </form>
+        <div id="bugsList" class="items"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Made with 💜 by Charu Nethra | DevVault © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
